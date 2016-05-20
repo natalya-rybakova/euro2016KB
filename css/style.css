@@ -1,0 +1,123 @@
+body {
+	width: 800px;
+}
+
+header {
+	width: 800px;
+	text-align: center;
+	display: table;
+}
+
+#main-menu ul {
+    margin: 0;
+    margin-left: 130px;
+    padding: 0;
+    list-style: none;
+}
+
+#main-menu li {
+    margin-right: 1em;
+	display:inline;
+
+}
+
+#stages {
+	text-align: left;
+	display: table;
+	width: 200px;
+	float: left;
+	border-width: 1px;
+	margin-top: 50px;
+}
+
+#next-game {
+	margin-top: 50px;
+	float: right;
+	width: 600px;
+}
+
+#first-team {
+	width: 200px;
+	float: left;
+}
+
+#status {
+	width: 200px;
+	float: left;
+	text-align: center;
+}
+
+#second-team {
+	width: 200px;
+	float: left;
+}
+
+#flag {
+	width: 200px;
+	border: 2px solid;
+}
+
+#players1 {
+	float: left;
+	width: 200px;
+	text-align: center;
+
+}
+
+#players2 {
+	float: right;
+	width: 200px;
+	text-align: center;
+}
+
+#list-of-stadiums {
+	text-align: left;
+	display: table;
+	width: 200px;
+	float: left;
+	border-width: 1px;
+}
+
+
+
+<!-- Stadium page 
+
+#stadium-name {
+	 width: 800px;
+	 margin-top: 30px;
+} -->
+
+#stadium-name p {
+	margin-bottom: 0.2em;
+	margin-top: 0.2em;
+}
+
+#photo-stadium {
+	padding: 35px;
+	float:left;
+}
+
+#map-stadium {
+	padding: 35px;
+	float: left;
+}
+
+#stadium-info {
+	width: 130px;
+	float: left;
+	margin-left: 30px;
+}
+
+#games-at-particular-stadium {
+	width: 440px;
+	padding-left: 200px;
+
+}
+
+
+<!-- Group page -->
+
+#games {
+	width: 600px;
+	
+}
