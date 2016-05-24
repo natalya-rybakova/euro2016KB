@@ -76,16 +76,19 @@ header {
 	width: 200px;
 	float: left;
 	border-width: 1px;
+	padding-top: 100px;
 }
 
 
 
-<!-- Stadium page 
+
 
 #stadium-name {
 	 width: 800px;
 	 margin-top: 30px;
-} -->
+	 width: 600px;
+	 float: right;
+} 
 
 #stadium-name p {
 	margin-bottom: 0.2em;
@@ -118,6 +121,77 @@ header {
 <!-- Group page -->
 
 #games {
+	width: 600px;	
+}
+
+#groups-menu ul {
+	margin: 0;
+    margin-left: 130px;
+    padding: 0;
+    list-style: none;
+}
+
+#groups-menu li {
+	margin-right: 1em;
+	display:inline;
+	text-align: center;
+}
+
+#groups-menu {
+	margin-top: 50px;
+	align: center;
+	text-align: center;
 	width: 600px;
-	
+	float: right;
+	margin-bottom: 50px;
+}
+
+#game-time nav p {
+	border: 5px solid black;
+}
+
+#games div {
+	align: center;
+}
+
+<!-- Team's page -->
+
+#team-info {
+	text-align: center;
+	width: 600px;
+	float: right;
+	padding-top: 100px;
+}
+
+
+<!-- Player's Page -->
+
+#player-name {
+	align: center;
+	width: 300px;
+	padding-top: 500px;	
+	display: table;
+}
+
+#country-team {
+	padding-left: 200px;
+	display: table;	
+}
+
+#local-team {
+	float: right;
+	display: table;
+}
+
+#info-player {
+	width: 200px;
+	height: 500px;
+	padding-right: 200px;
+	display: table;
+}
+
+#other-players {
+	float: right;
+	display: table;
+	margin-top: 30px;
 }
