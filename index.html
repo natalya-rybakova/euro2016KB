@@ -1,18 +1,26 @@
 <!doctype html>
 <html>
 <head>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <title>Main Page</title>
 </head>
 
-<body width="800px">
-<main width="800px">
+<body width="1200px">
+<main>
 <header>
+	<div id="logo-box">
+    	<h1 id="logo">
+        	<a href="index.html">
+				<img src="images/logo.png" width="150px">
+            </a>
+         </h1>
+    </div>
     <nav id="main-menu">
     <ul>
     	<li><a href="#matches">Matches</a></li>
-        <li><a href="#teams">Teams</a></li>
+        <li><a href="#teams">Groups</a></li>
         <li><a href="#stadiums">Stadiums & Host Cities</a></li>        
     </ul>
     </nav>
@@ -33,34 +41,98 @@
   
    <section id="games">
    
-   		<div id="first-team">
+   		<div id="first-team"><a href="teams-page.html">
             <p align="center">France</p>
-     		<img src="/images/France.png" id="flag">
+     		<img src="images/France.png" id="flag"></a>
+            	<div>
+            <p align="center">Call-up</p>
+            <p><!-- List of players SPARQL--></p>
+            
+            	<!-- Example -->
+            <p class="roles">Goalkeepers</p>
+            <p><a href="player-page.html">Name Surname</a></p> 
+            <p>Name Surname</p> 
+            <p class="roles">Defenders</p>
+            <p>Name Surname</p>
+            <p>Name Surname</p> 
+            <p>Name Surname</p> 
+            <p>Name Surname</p> 
+            <p>Name Surname</p> 
+            <p>Name Surname</p> 
+            <p>Name Surname</p>
+            <p class="roles">Midfielders</p>
+            <p>Name Surname</p> 
+            <p>Name Surname</p>
+            <p>Name Surname</p> 
+            <p>Name Surname</p>
+            <p class="roles">Forwards</p> 
+            <p>Name Surname</p> 
+            <p>Name Surname</p>  
+            <p>Name Surname</p>
+            <p>Name Surname</p>
+            <p>Name Surname</p>
+   		</div>
         </div>
    
-   		<div id="status">
+   		<div id="status" width="200px">
    			<p>Status</p>
         	<p>0:0</p>
         	<p>21:00 10.06.2016</p>
-        	<p>Stade de France</p>
-        	<p>Referee</p>
+        	<p><a href="stadium-page.html">Stade de France</a></p>
+        	<p><b>Referee</b><br>
+            Referee Name</p>
   		</div>
             
-        <div id="second-team">
+        <div id="second-team"><a href="teams-page.html">
    			<p align="center">Romania</p>
-        	<img src="/images/Romania.png" id="flag">
+        	<img src="images/Romania.png" id="flag"></a>
+            <div>
+ 			<p align="center">Call-up</p>
+            <p><!-- List of players SPARQL--></p>
+            <p class="roles">Goalkeepers</p>
+            <p><a href="player-page.html">Name Surname</a></p> 
+            <p>Name Surname</p> 
+            <p class="roles">Defenders</p>
+            <p>Name Surname</p>
+            <p>Name Surname</p> 
+            <p>Name Surname</p> 
+            <p>Name Surname</p> 
+            <p>Name Surname</p> 
+            <p>Name Surname</p> 
+            <p>Name Surname</p>
+            <p class="roles">Midfielders</p>
+            <p>Name Surname</p> 
+            <p>Name Surname</p>
+            <p>Name Surname</p> 
+            <p>Name Surname</p>
+            <p class="roles">Forwards</p> 
+            <p>Name Surname</p> 
+            <p>Name Surname</p>  
+            <p>Name Surname</p>
+            <p>Name Surname</p>
+            <p>Name Surname</p>
+      </div> 
    		</div>
             
-        <div id="players1">
-            <p>List of players</p>
-            <p><!-- List of players SPARQL--></p>
-   		</div>
+        
+        
+        
             
-		<div id="players2">
-            <p>List of players</p>
-            <p><!-- List of players SPARQL--></p>
-            </div>
-        </div>
+		
+	<!--		<script type="text/javascript">
+			var siteDomain = "localhost:8890/conductor"
+			var query = "SELECT * WHERE {?s ?p ?o} LIMIT 10";
+			var url = "http://" + siteDomain + "/sparql.json?query=";
+			url += encodeURIComponent(query);
+			$.ajax({
+				dataType: 'json',
+				url: url,
+				success: function(data) {
+					alert('success: ' + data.results.bindings.length + ' results');
+					console.log(data);
+				}
+			});
+		</script>  -->
             </section>
    </body>
 

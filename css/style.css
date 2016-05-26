@@ -8,25 +8,38 @@ header {
 	display: table;
 }
 
+#logo-box {
+  float: left;
+  margin-left: 25px;
+}
+
+#logo {
+  margin: 0;
+  height: 70px;
+  text-align: center;
+}
+
 #main-menu ul {
-    margin: 0;
-    margin-left: 130px;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  margin-right: 25px;
+  padding-left: 0;
+  list-style: none;
+  height: 70px;
+  line-height: 70px;
+  text-align:center;
 }
 
 #main-menu li {
     margin-right: 1em;
 	display:inline;
-
+	text-transform: uppercase;
 }
 
 #stages {
 	text-align: left;
-	display: table;
+	display: inline-block;
 	width: 200px;
 	float: left;
-	border-width: 1px;
 	margin-top: 50px;
 }
 
@@ -58,15 +71,23 @@ header {
 }
 
 #players1 {
-	float: left;
+	margin-top: 100px;
+	margin-left: 200px;
 	width: 200px;
-	text-align: center;
+	text-align: left;
 
 }
 
 #players2 {
 	float: right;
-	width: 200px;
+	width: 100px;
+	text-align: left;
+	display: table;
+}
+
+.roles {
+	font-weight:bold;
+	font-style:italic;
 	text-align: center;
 }
 
@@ -166,12 +187,7 @@ header {
 
 <!-- Player's Page -->
 
-#player-name {
-	align: center;
-	width: 300px;
-	padding-top: 500px;	
-	display: table;
-}
+
 
 #country-team {
 	padding-left: 200px;
@@ -190,8 +206,50 @@ header {
 	display: table;
 }
 
-#other-players {
+#players {
 	float: right;
 	display: table;
-	margin-top: 30px;
+	margin-top: 50px;
+}
+
+#other-players {
+	float: right;
+	display:inline-block;
+	margin-top: 50px;
+}
+
+#footballer-name {
+	font-size:24px;
+	font-weight:bold;
+}
+
+#player-info {
+	display: inline-block;
+}
+
+.player-country-cteam {
+	display:inline-block;
+	width: 200px;
+	text-align: center;
+}
+
+#player-more-info {
+	text-align: center;
+}
+
+#player-info p {
+	text-align: center;
+}
+
+
+<!-- Team's page -->
+
+.in-games {
+	display: inline-block;
+	width: 133px;
+}
+
+#team-info {
+
+	margin-left: 100px;	
 }
