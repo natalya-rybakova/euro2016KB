@@ -142,7 +142,8 @@ header {
 <!-- Group page -->
 
 #games {
-	width: 600px;	
+	width: 600px;
+	align-items: center;	
 }
 
 #groups-menu ul {
@@ -150,6 +151,10 @@ header {
     margin-left: 130px;
     padding: 0;
     list-style: none;
+}
+
+table {
+	margin: auto;
 }
 
 #groups-menu li {
