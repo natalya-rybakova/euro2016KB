@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Stadiums</title>
+		<script src="js/main-sparql.js"></script>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Custom Theme files -->
+        <!--theme-style-->
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+        <link href="css/flag-icon.css" rel="stylesheet" type="text/css" media="all" />	
+        <link href="css/docs.css" rel="stylesheet" type="text/css" media="all" />	
+        <!--//theme-style-->
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"></meta>
+                <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+                <!--fonts-->
+                <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'/>
+                <link href='http://fonts.googleapis.com/css?family=Passion+One:400,700,900' rel='stylesheet' type='text/css' />
+                <!--//fonts-->
+                <script src="js/responsiveslides.min.js"></script>
+                <script src="js/docs.js"></script>
+				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+				<script type='text/javascript'>
+				function init_map(){
+				var myOptions = {zoom:10,center:new google.maps.LatLng(51.5073509,-0.12775829999998223),mapTypeId: google.maps.MapTypeId.ROADMAP};
+					map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+					marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.5073509,-0.12775829999998223)});
+					infowindow = new google.maps.InfoWindow({content:'<strong>Stadium 1</strong><br>London, Stadium 1<br>'});
+					google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+					infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+				</script>
+                </head>
+                <body> 
+                    <!--header-->
+                    <div class="header">
+
+                        <div class="header-bottom-top">
+                            <div class="container">
+                                <div class="search">	
+                                    	
+                                            </div>
+                                            <div class="clearfix"> </div>
+                                            <div class="header-bottom">			
+                                                <div class="logo">
+                                                    <a href="index.html"><img src="images/logo.jpg" width="200px" alt=" " /></a>
+                                                </div>
+                                                <div class="top-nav">
+                                                    <span class="menu"> </span>
+                                                    <ul>
+                                                        <li><a href="matches.html" class="scroll">Home</a></li>                                                        
+                                                        <li><a href="group.html" class="scroll">Groups</a></li>
+                                                        <li><a href="teams.html" class="scroll">Teams</a></li>
+                                                        <li class="active"><a href="stad.html" class="scroll">Stadiums</a></li>
+                                                    </ul>
+                                                    <!--script-->
+                                                    <script>
+                                                        $("span.menu").click(function () {
+                                                            $(".top-nav ul").slideToggle(500, function () {
+                                                            });
+                                                        });
+                                                    </script>
+                                                </div>
+                                                <div class="clearfix"> </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <!--content-->
+                                            
+											    <div class="container">
+                                                    <div class="contact">
+                                                        <div class="col-md-12 ">
+                                                            <div class="row">
+                                                                <div class="col-md-3 "><a href="stad_n.html">
+                                                                    <figure class="figure" >
+                                                                        <img src="images/Stadiums_pics/Stade des Lumieres, Lyon.jpg" width="200" height="200" class="figure-img img-fluid img-rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                                                            <figcaption class="figure-caption">Stade des Lumieres, Lyon</figcaption>
+                                                                    </figure></a>
+                                                                </div>
+                                                                <div class="col-md-3 ">
+                                                                    <figure class="figure" >
+                                                                        <img src="images/Stadiums_pics/Stade Velodrome, Marseille.jpg" width="200" height="200" class="figure-img img-fluid img-rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                                                            <figcaption class="figure-caption">Stade Velodrome, Marseille</figcaption>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col-md-3 ">
+                                                                    <figure class="figure">
+                                                                        <img src="images/Stadiums_pics/Allianz Riviera, Nice.jpg" width="200" height="200" class="figure-img img-fluid img-rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                                                            <figcaption class="figure-caption">Allianz Riviera, Nice</figcaption>
+                                                                    </figure>
+                                                                </div>
+																<div class="col-md-3 ">
+                                                                    <figure class="figure" >
+                                                                        <img src="images/Stadiums_pics/Matmut Atlantique, Bordeaux.jpg" width="200" height="200" class="figure-img img-fluid img-rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                                                            <figcaption class="figure-caption">Matmut Atlantique, Bordeaux</figcaption>
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                
+                                                                <div class="col-md-3 ">
+                                                                    <figure class="figure" >
+                                                                        <img src="images/Stadiums_pics/Parc des Princes, Paris.jpg" width="200" height="200" class="figure-img img-fluid img-rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                                                            <figcaption class="figure-caption">Parc des Princes, Paris</figcaption>
+                                                                    </figure>
+                                                                </div>
+                                                                <div class="col-md-3 ">
+                                                                    <figure class="figure">
+                                                                        <img src="images/Stadiums_pics/Stade Bollaert-Delelis, Lens.jpg" width="200" height="200" class="figure-img img-fluid img-rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                                                            <figcaption class="figure-caption">Stade Bollaert-Delelis, Lens</figcaption>
+                                                                    </figure>
+                                                                </div>
+																<div class="col-md-3 ">
+                                                                    <figure class="figure" >
+                                                                        <img src="images/Stadiums_pics/Stade de France, Saint-Denis.jpg" width="200" height="200" class="figure-img img-fluid img-rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                                                            <figcaption class="figure-caption">Stade de France, Saint-Denis</figcaption>
+                                                                    </figure>
+                                                                </div>
+																<div class="col-md-3 ">
+                                                                    <figure class="figure" >
+                                                                        <img src="images/Stadiums_pics/Stade des Lumieres, Lyon.jpg" width="200" height="200" class="figure-img img-fluid img-rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                                                            <figcaption class="figure-caption">Stade des Lumieres, Lyon</figcaption>
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+															
+														<div class="row">
+															
+															<div class="col-md-3 ">
+                                                                    <figure class="figure" >
+                                                                        <img src="images/Stadiums_pics/Stade Geoffroy-Guichard, Saint-Etienne.jpg" width="200" height="200" class="figure-img img-fluid img-rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                                                            <figcaption class="figure-caption">Stade Geoffroy-Guichard, Saint-Etienne</figcaption>
+                                                                    </figure>
+															</div>
+															
+															<div class="col-md-3 ">
+                                                                    <figure class="figure" >
+                                                                        <img src="images/Stadiums_pics/Stade Pierre-Mauroy, Lille.jpg" width="200" height="200" class="figure-img img-fluid img-rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                                                            <figcaption class="figure-caption">Stade Pierre-Mauroy, Lille</figcaption>
+                                                                    </figure>
+															</div>
+															
+															<div class="col-md-3 ">
+                                                                    <figure class="figure" >
+                                                                        <img src="images/Stadiums_pics/Stadium Municipal, Toulose.jpg" width="200" height="200" class="figure-img img-fluid img-rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                                                                            <figcaption class="figure-caption">Stadium Municipal, Toulose</figcaption>
+                                                                    </figure>
+															</div>
+																	
+														 
+                                                        </div>
+														
+														 
+														 
+														 </div>
+
+                                                        <div class="clearfix"> </div>
+                                                    </div>
+                                                </div>
+
+                                            <!--content-->
+                                            <!--footer-->
+                                            
+                                            </body>
+                                            </html>
